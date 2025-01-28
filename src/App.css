@@ -1,38 +1,126 @@
-.App {
+body{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+.container{
+  /* height: 500px; */
+  width: 550px;
+  margin: 50px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: none;
+  /* background-color:rgb(46, 211, 31); */
+  background-color: yellow;
+  border-radius: 10px;
+}
+h1{
+  font-family: sans-serif;
+  /* display: flex; */
   text-align: center;
+  background-color: aqua;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  box-shadow: 0px 0px 5px 5px yellowgreen;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#expression{
+  width: 90%;
+  height: 35px;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin: 5px;
+  padding-left: 5px;
+  /* text-align: center; */
+  font-size: medium;
+  background-color: black;
+  color: wheat;
+}
+h2{
+  margin: 10px;
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+.select-radio{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.p-radio label{
+  padding: 0px 5px;
+  font-style: italic;
+}
+.p-radio input{
+  margin: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button{
+  margin: 10px;
+  width: 50%;
+  font-size: 20px;
+  height: 50px;
+  border-radius: 20px;
+  border: 2px solid black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+button:hover{
+  background-color: rgb(34, 34, 34);
+}
+.left{
+  /* text-align: left; */
+  padding-left: 10px;
+  width: 100%;
+}
+.output-area{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 95%;
+  border: 2px solid black;
+  margin: 10px;
+  border-radius: 15px;
+  /* padding: 10px; */
+
+}
+.result-steps{
+  width: 95%;
+  font-size: medium;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: black;
+  color: wheat;
+  height: 50%;
+  text-align: justify;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+/* Define a CSS animation for table rows */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+      opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+      opacity: 1;
   }
+}
+
+/* Apply the animation to table rows */
+table tr {
+  animation: fadeIn 0.5s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
